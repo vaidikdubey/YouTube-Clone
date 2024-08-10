@@ -1,0 +1,176 @@
+*{
+    /*Always make sure to put these in the star selector whenever styling*/    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'poppins', 'san-sarif';
+}
+
+/*For styling the text inside the anchor tag*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: rgb(48, 48, 48);
+}
+
+img{
+    cursor: pointer;
+}
+
+/*Making a class for recursive use wherever we wish to give display as flex and align items to center. We can directly use d-flex class*/
+.d-flex{
+    display: flex; /*Puts items in the horizontal bar*/
+    align-items: center; /*Aligns items from top to bottom in centre*/
+}
+
+nav{
+    border: transparent;
+    padding: 5px 20px;
+    justify-content:  space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: sticky; /*Freezez the nav bar to the top and it doesn't get scrolled*/
+    top: 0;
+    z-index: 100;
+}
+
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 25px;
+    margin-right: 15px; /* Space between the hamburger icon and YouTube logo */
+}
+
+.nav-left .ytlogo{
+    width: 80px;
+}
+
+.nav-middle{
+    border: none;
+    width: 50%;
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-box input {
+    width: 80%;
+    border: none;
+    padding: .4rem;
+    outline: none;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+}
+
+.search-box img {
+    width: 25px; /* Set a specific size for the search icon */
+    margin-left: 20px; /* Adds spacing between input and icon */
+    padding-top: 3px;
+    border: none;
+}
+
+.search-div{
+    width: 10%;
+    background-color: rgb(72, 72, 72);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nav-middle .mic-icon{
+    width: 25px;
+}
+
+.search-box{
+    width: 90%;
+    background-color: rgb(48, 48, 48);
+    border: 1px solid grey;
+    border-radius: 100px;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.mic-div{
+    border: 2px solid rgb(72, 72, 72);
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.mic-icon{
+    /*border: 2px solid red;*/
+    border-radius: 50px;
+}
+
+.sidebar{
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    padding: 10px;
+    padding-top: 80px;
+}
+
+.sidebar-upper a{
+    padding: 12px;
+    margin-bottom: 2px;
+}
+
+.sidebar-upper a img{
+    width: 25px;
+    margin-right: 20px;
+}
+
+.sidebar-upper a:first-child{
+    border-radius: 10px;
+    background-color: #282828;
+}
+
+/*Gives the dark border when we hover over any side option*/
+.sidebar-upper a:hover{
+    border-radius: 10px;
+    background-color: #272727;
+}
+
+.mainContainer{
+    border: none;
+    margin-left: 17%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: none;
+    width: 283px;
+    margin-right: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.thumbnail{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.logoContainer .userImg{
+    border-radius: 50%;
+    width: 25px;
+    margin-right: 25px;
+}
