@@ -14,7 +14,7 @@ a{
 }
 
 body{
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(15,15,15,255);
 }
 
 img{
@@ -29,7 +29,7 @@ img{
 
 nav{
     border: transparent;
-    padding: 5px 20px;
+    padding: 15px 20px;
     justify-content:  space-between;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     position: sticky; /*Freezez the nav bar to the top and it doesn't get scrolled*/
@@ -54,7 +54,7 @@ nav{
 }
 
 .nav-left .ytlogo{
-    width: 80px;
+    width: 100px;
 }
 
 .nav-middle{
@@ -106,11 +106,9 @@ nav{
 }
 
 .mic-div{
-    border: 2px solid rgb(72, 72, 72);
     width: 40px;
     height: 40px;
     justify-content: center;
-    border-radius: 50%;
 }
 
 .mic-icon{
@@ -128,6 +126,14 @@ nav{
     padding-top: 80px;
 }
 
+.smaller-sidebar{
+    width: 5%;
+}
+
+.smaller-sidebar a p{
+    display: none;
+}
+
 .sidebar-upper a{
     padding: 12px;
     margin-bottom: 2px;
@@ -140,7 +146,7 @@ nav{
 
 .sidebar-upper a:first-child{
     border-radius: 10px;
-    background-color: #282828;
+    background-color: #272727;
 }
 
 /*Gives the dark border when we hover over any side option*/
@@ -156,9 +162,25 @@ nav{
     flex-wrap: wrap;
 }
 
+.larger-mainContainer{
+    border: none;
+    margin-left: 7%;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
 .card{
     border: none;
     width: 283px;
+    margin-right: 30px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.larger-card{
+    padding-left: 20px;
+    border: none;
+    width: 400px;
     margin-right: 30px;
     color: white;
     margin-bottom: 30px;
@@ -173,4 +195,163 @@ nav{
     border-radius: 50%;
     width: 25px;
     margin-right: 25px;
+}
+
+.video-container{
+    padding-top: 20px;
+    padding-left: 2rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-container .content-left{
+    flex-basis: 67%;
+}
+
+.video-container .content-left video{
+    width: 100%;
+}
+
+.video-container .content-right{
+    flex-basis: 31%;
+    padding-right: 1rem;
+}
+
+.video-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.video-list img{
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.below-video-container{
+    color: white;
+}
+
+.below-video-container h1{
+    font-size: 2.3rem;
+}
+
+.other-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.other-details-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.channelNameAndIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channelNameAndIcon, .joinAndSubsButton-container, .other-details-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other-details-right{
+    justify-content: space-evenly;
+    width: 15%;
+    background-color: #2e2e2e;
+}
+
+.other-details-right img{
+    width: 30px;
+}
+
+.channelIcon{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.subsCount{
+    font-size: 0.65rem;
+}
+
+.joinAndSubsButton-container{
+    border: none;
+    padding: 1rem .5rem;
+    border-radius: 20px;
+    outline: none;
+}
+
+.joinButton{
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    margin-right: .5rem;
+    background-color: #2e2e2e;
+    color: white;
+    font-weight: 1000;
+    cursor: pointer;    
+}
+
+.subsButton{
+    padding: .5rem 2rem;
+    border: none;
+    background-color: red;
+    margin-right: 1rem;
+    color: white;
+    border-radius: 20px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+.description-Container{
+    background-color: #2e2e2e;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.description-Container p{
+    font-size: 1rem;
+}
+
+.commentContainer{
+    margin-top: 1rem;
+    margin-right: 30px;
+}
+
+.commentContainer h2{
+    font-size: 1.5rem;
+}
+
+.writeCommentContainer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.writeCommentContainer input{
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid grey;
+    color: white;
+    width: 100%;
+}
+
+.previousComments{
+    margin-top: 1rem;
 }
