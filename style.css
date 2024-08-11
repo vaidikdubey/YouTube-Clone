@@ -355,3 +355,8 @@ nav{
 .previousComments{
     margin-top: 1rem;
 }
+
+.nameAndComment .channelName{
+    font-size: 0.7rem;
+    margin-bottom: 0.7rem;
+}
