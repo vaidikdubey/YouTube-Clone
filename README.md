@@ -15,4 +15,4 @@ Clone the repository and open `index.html` in your browser to view the project.
 ## Technologies Used
 - **HTML5**: For structuring the content.
 - **CSS3**: For styling and layout.
-- **JavaScript**: For adding basic interactivity.
+- **JavaScript**: For adding interactivity.
